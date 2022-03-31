@@ -1,0 +1,36 @@
+name = "2m-blog"
+page = "https://dvim.notion.site/dvim/2m-blog-d0fc94d8b62c40c094261e861b8b6079"
+extension_in_links = false
+
+[site]
+  [[site.meta]]
+  name = "title"
+  content = "2m blog"
+
+  [[site.meta]]
+  name = "description"
+  content = "2m personal blog"
+
+  [[site.inject.body.script]]
+  type="text/javascript"
+  src="https://www.googletagmanager.com/gtag/js?id=G-C43VPDZBBL"
+  async="true"
+
+  [[site.inject.body.script]]
+  type="text/javascript"
+  inner_html="""
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-C43VPDZBBL');
+  """
+
+[pages]
+  [pages.4ca7b379c6c04996bfe11dc78b3e658e]
+    slug = "susikurk-savo-pazintini-taka"
+
+  [pages.e6e402ee46024884b4670cfdced15b9e]
+    slug = "suzavejo-radijo-dokumentika-kaip-vakar-erdves"
+
+  [pages.3722b8d476074bfa9e32951c4fbb6b3d]
+    slug = "bitkoino-verte"
